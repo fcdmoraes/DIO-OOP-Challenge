@@ -1,9 +1,9 @@
 package Controller;
 
-public class Curse extends Content {
+public class Course extends Content {
     int timeDuration;
 
-    public Curse() {
+    public Course() {
     }
 
     @Override
