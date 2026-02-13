@@ -65,4 +65,16 @@ public class Bootcamp {
     public int hashCode() {
         return Objects.hash(name, description, startDate, endDate, enrolledDevs, contents);
     }
+
+    @Override
+    public String toString() {
+        return "Bootcamp{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", enrolledDevs=" + enrolledDevs +
+                ", contents=" + contents +
+                '}';
+    }
 }

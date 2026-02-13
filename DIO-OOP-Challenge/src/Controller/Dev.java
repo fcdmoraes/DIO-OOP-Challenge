@@ -33,6 +33,14 @@ public class Dev {
         return xp;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
@@ -43,5 +51,14 @@ public class Dev {
     @Override
     public int hashCode() {
         return Objects.hash(name, enrolledContents, finishedContents);
+    }
+
+    @Override
+    public String toString() {
+        return "Dev{" +
+                "name='" + name + '\'' +
+                ", enrolledContents=" + enrolledContents +
+                ", finishedContents=" + finishedContents +
+                '}';
     }
 }
